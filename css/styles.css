@@ -57,7 +57,9 @@ body {
 .bg-light {
     background-color: #fff !important;
 }
-
+.text-color {
+    color: #fff !important;
+}
 .navbar {
     padding: 15px 10px;
     background: #fff;
@@ -225,7 +227,7 @@ body {
     left: -250px;
     height: 100vh;
     z-index: 999;
-    background: #0b2c68;
+    background: #20844D;
     color: #fff;
     transition: all 0.3s;
     overflow-y: scroll;
@@ -241,7 +243,7 @@ body {
     height: 35px;
     line-height: 35px;
     text-align: center;
-    background: #0b2c68;
+    background: #63AA50;
     position: absolute;
     top: 10px;
     right: 10px;
@@ -252,7 +254,7 @@ body {
 }
 
 #dismiss:hover {
-    background: #038AEC;
+    background: #63AA50;
     color: #7386D5;
 }
 
@@ -263,7 +265,7 @@ body {
 
 #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #47748b;
+    border-bottom: 1px solid #fff;
 }
 
 #sidebar ul p {
@@ -287,11 +289,15 @@ a[aria-expanded="true"] {
     color: #fff;
     background: #f3f3f3;
 }
-
+.btn-info {
+    color: #fff;
+    background-color: #20844D !important;
+    border-color: #63AA50 !important;
+}
 #sidebar ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #000;
+    color: #fff;
 }
 
 #sidebarCollapse {
@@ -381,7 +387,7 @@ a[aria-expanded="true"] {
 .item-flex-text-secc-1 {
     width: 100%;
     padding:  10px;
-    padding-left: 35px;
+    padding-left: 10px;
 
 }
 
