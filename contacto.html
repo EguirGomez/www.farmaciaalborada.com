@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="image/x-icon" href="img/ico.png" rel="SHORTCUT ICON" />
-        
+
     <title> Farmacia Alborada | Farmacias | Bayamón | Puerto Rico (PR)</title>
     <meta name="keywords" content=" Consultoria & Asesoria sobre la dosificacion, los tiempos y las interacciones, Despacho de medicamentos, Entregar de Medicamentos al Hogar, Productos OTC, Recetas electronicas, Recibimos recetas por fax o email
     Tobillera, Variedad de Bastones, Toallitas Húmedas para pacientes encamados, Sonda urinaria de drenaje (Urinary Catheter), Rodillera,
@@ -24,7 +24,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/izmir.min.css">
+
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
@@ -131,25 +131,25 @@
     <section class="seccion-formulario py-5">
         <div class="container">
             <div class="row bg-verde-claro my-5">
-                <form id="contactForm" class="w-100">
+                <form method="post" id="contactForm" name="contacto" class="w-100">
                     <div class="container p-5">
                         <div class="row">
                             <div class="col-12 col-lg-4 d-flex flex-column justify-content-between">
-                                
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                                <input type="text" class="form-control" id="email" placeholder="Correo Electrónico">
-                               
+
+                                <input type="text" class="form-control" name="fullname" id="fullname" placeholder="Nombre">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electrónico">
+
                             </div>
                             <div class="col-12 col-lg-4 d-flex flex-column justify-content-between">
-                              
-                                <input type="text" class="form-control" id="apellido" placeholder="Apellido">
-                                <input type="text" class="form-control" id="telefono" placeholder="Teléfono">
-                               
+
+                                <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Apellido">
+                                <input type="tel" class="form-control" name="phone" id="phone" placeholder="Teléfono">
+
                             </div>
                             <div class="col-12 col-lg-4 ">
-                               
-                                <textarea name="mensaje" id="mensaje" placeholder="Mensaje" class="form-control" cols="30" rows="3"></textarea>
-                               
+
+                                <textarea name="message" id="message" placeholder="Mensaje" class="form-control" cols="30" rows="3"></textarea>
+
                             </div>
                         </div>
                         <div class="row justify-content-md-end pt-4 px-3">
@@ -159,14 +159,14 @@
                             </div>
                         </div>
                     </div>
-                    
+
                 </form>
             </div>
-            
-            
+
+
         </div>
     </section>
-    
+
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -182,13 +182,13 @@
                         </p>
                         <p class="redes">
                             <a href="https://www.facebook.com/Farmacia-Alborada-1892666294333755/" target="_blank">
-                                Búscanos en 
+                                Búscanos en
                                 <span>
                                     <i class="fa fa-facebook facebook" aria-hidden="true"></i>
                                 </span>
                             </a>
                         </p>
-                        
+
 
                     </div>
                 </div>
@@ -231,11 +231,11 @@
     <script src="https://www.google.com/recaptcha/api.js?render=6LeNVV8aAAAAANKzGizswzS4iJWAv3WybOIWyIvb"></script>
     <script>
     let contacto = document.getElementById("contactForm");
-    let fullname = document.getElementById("nombre");
-    let lastname = document.getElementById("apellido");
+    let fullname = document.getElementById("fullname");
+    let lastname = document.getElementById("lastname");
     let email = document.getElementById("email");
-    let message = document.getElementById("mensaje");
-    let phone = document.getElementById("telefono");
+    let message = document.getElementById("message");
+    let phone = document.getElementById("phone");
     contacto.addEventListener("submit", function (e) {
     e.preventDefault();
     grecaptcha.ready(function () {
